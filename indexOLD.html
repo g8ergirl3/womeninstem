@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>A Pen by  Jordan</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+  <style>
+  * {
+      box-sizing: border-box;
+  }
+
+  body {
+      margin: 0;
+      font-family: Arial;
+  }
+
+  /* The grid: Four equal columns that floats next to each other */
+  .column {
+      float: left;
+      width: 25%;
+      padding: 10px;
+  }
+
+  /* Style the images inside the grid */
+  .column img {
+      opacity: 0.8;
+      cursor: pointer;
+  }
+
+  .column img:hover {
+      opacity: 1;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  /* The expanding image container */
+  .container {
+      position: relative;
+      display: none;
+       justify-content: center
+  }
+
+
+  /* Expanding image text */
+  #imgtext {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      color: white;
+      font-size: 20px;
+  }
+
+  /* Closable button inside the expanded image */
+  .closebtn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      color: white;
+      font-size: 35px;
+      cursor: pointer;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  @media screen and (max-width: 200px) {
+    .column {
+      width: 100%;
+      display:row;
+    }
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .title {
+    color: grey;
+  }
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      background-color: #715999;
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #715999;
+      padding: 17px;
+      position:absolute;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #715999;
+      color: white;
+      text-align: center;
+    }
+
+
+  .bob {
+      padding-left: 25px;
+    }
+
+    .carl {
+      padding-left: 25px;
+    }
+
+
+.fa {
+  padding: 30px;
+  font-size: 50px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px 20px;
+  border-radius: 10%;
+}
+
+.fa:hover {
+    opacity: 1;
+}
+
+.fa-facebook {
+  background: #000;
+  color: white;
+}
+
+.fa-twitter {
+  background: #000;
+  color: white;
+}
+
+    .fa-youtube {
+      background: #000;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #000;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/logo.png" id="logo"  /></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Students in STEM</a></li>
+        <li><a href="#">Be A Mentor</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    <div style="float:right;padding-top:11px">
+      <a type="button" class="btn-floating btn-lg btn-fb"><i class="fa fa-facebook"></i></a>
+      <a type="button" class="btn-floating btn-lg btn-fb"><i class="fa fa-twitter"></i></a>
+      <a type="button" class="btn-floating btn-lg btn-fb"><i class="fa fa-youtube"></i></a>
+      <a type="button" class="btn-floating btn-lg btn-fb"><i class="fa fa-instagram"></i></a>
+    </div>
+    </div>
+  </div>
+</nav>
+<!-- <div class="container center">
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="images/blogs.jpg" alt="blogs" style="width:100%">
+        <div class="container">
+          <p></p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="images/book.jpg" alt="gender" style="width:100%">
+        <div class="container">
+
+          <p></p>
+
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="images/gender.jpg" alt="imp" style="width:100%">
+        <div class="container">
+
+          <p></p>
+
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="images/imp.jpg" alt="Mike" style="width:100%">
+        <div class="container">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="container-fluid text-center">
+</footer> -->
+
+</body>
+</html>
